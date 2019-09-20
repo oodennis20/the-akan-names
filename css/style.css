@@ -1,3 +1,12 @@
 h1{
-    font-size: 200%;
+    font-size: 60px;
+}
+body{
+    background-image: 
+    url('https://images.unsplash.com/photo-1563016115-85abfc230672?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.one{
+    margin-top: 10px;
 }
