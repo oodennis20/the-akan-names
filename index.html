@@ -3,28 +3,36 @@
    <head>
        <title>The-Akan-Names</title>
        <link href="css/style.css" rel="stylesheet" type="text/css">
+       <script src="js/scripts.js"></script>
    </head>
     <body>
-        <marquee scrollamout="20" direction="left" ><h1>The Akan Names</h1></marquee>
-        <marquee class="one" scrollamout="20" direction="right"><h1>The Akan Names</h1></marquee>
-        <form action="#" method="post" onsubmit="return validation();"> 
-            <input type="text" name="date" id="date"><br> 
-            <input type="text" name="month" id="month"><br> 
-            <input type="text" name="year" id="year"><br>
-            <input type="submit" name="submit" value="submit">  
-        </form>
-        <div id="eresult"></div>
-        <script type="text/javascript">
-        function validation(){
-            var date = document.getElementById("date").value;
-            var month = document.getElementById("month").value;
-            var year = document.getElementById("year").value;
-        if(date=="" || month=="" || year=="")
-        {
-            document.getElementById("eresult").innerHTML = "All field required";
-            return
-        }
-        }
-        </script>
+        <marquee scrollamout="20" direction="left"><h1>The Akan Names</h1></marquee>
+        <marquee class="one" scrollamout="20" direction="right"><h1>The Akan Names</h1></marquee><br>
+        <h2 class="two">Get To Know Your Akan Names!!!</h2>
+        <p>
+            Welcome to the AKAN NAMES website. Here you will be able to know your akan names either female or male. All<br> 
+            one has to do is to insert your date of birth, month and the year and the application will calculate for you<br>
+            giving out theresult of an akan name(which are names given to ghananians according to the day of the week each is born<br><br>
+        </p>
+        <div class= card>
+            <div>
+                <form name="calc" onsubmit="event.preventdefault(); calculator()"> 
+                    <div class="center">
+                        <h3> Gender</h3>
+                    </div>
+                    <p>Please select your gender:</p>
+                        <input type="radio" name="gender" value="male"> Male<br>
+                        <input type="radio" name="gender" value="female"> Female<br>
+                    <div class="center">
+                        <input type="number" name="date" id="date">DATE<br> 
+                        <input type="number" name="month" id="month">MONTH<br> 
+                        <input type="number" name="year" id="year">YEAR<br>
+                        <button id="submit">submit</button>
+                        </form> 
+                    </div>
+                </form>
+            </div>
+             <div id="eresult" style="color:red;"></div>
+        </div>
     </body>
 </html>

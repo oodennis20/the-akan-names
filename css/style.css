@@ -8,5 +8,12 @@ body{
     background-size: cover;
 }
 .one{
-    margin-top: 10px;
+    margin-top: 60px;
+}
+.centre{
+    text-align: center;
+}
+.two{
+    font-size: 30px;
+    text-align: center;
 }
