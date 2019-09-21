@@ -1,9 +1,6 @@
-var male =[
-    "Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"
-]
-var female =[
-    "Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"
-]
+var day =["sunday","tuesday","wednesday","thursday","friday","saturday","monday"]
+var d = new Date(dateString);
+var dayName = days[d.getDay()];
 function calculator(){
     var name=""
     var gender=document.forms["calc"]["gender"].value;
