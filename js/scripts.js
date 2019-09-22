@@ -5,15 +5,15 @@ var CC;
   var YY;
   var MM;
   var date;
-  var name;
-  function validate(){
-     alert ("Your Akan name is " +calculateDay());
-      findGender();
+  var name;   
 function validate(){
   var day= document.getElementById("date").value;
   var month= document.getElementById("month").value;
   var year= document.getElementById("year").value;
   var gender= document.querySelector('input[name="gender"]:checked').value;
+  alert ("Your Akan name is " +calculateDay());
+  findGender();
+}
   if(year==""){
     document.getElementById("month").innerHTML ="Enter valid year"
       return false;
