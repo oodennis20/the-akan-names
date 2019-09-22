@@ -6,10 +6,9 @@ var CC, YY, MM, d, name;
   var month;
   var day;
   var gender;
-  function compile(){
-      validate();
+  function validate(){
      alert ("Your Akan name is " +calculateDay());
-      findGender();
+      findGender(); 
   }
 function validate(){
   var day= document.forms["calc"]["date"].value;
