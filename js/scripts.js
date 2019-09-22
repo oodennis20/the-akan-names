@@ -9,6 +9,31 @@ var CC;
   function validate(){
      alert ("Your Akan name is " +calculateDay());
       findGender();
+function validate(){
+  var day= document.getElementById("date").value;
+  var month= document.getElementById("month").value;
+  var year= document.getElementById("year").value;
+  var gender= document.querySelector('input[name="gender"]:checked').value;
+  if(year==""){
+    document.getElementById("month").innerHTML ="Enter valid year"
+      return false;
+  }
+  if(month=="" || month<0 || month>12){
+    document.getElementById("month").innerHTML ="Enter valid month"
+      return false;
+  }
+  if(date=="" || date<0 || date>31){
+    document.getElementById("date").innerHTML ="Provide a valid date"
+      return false;
+  }
+  if(gn[0].checked== false && gn[1].checked==false){
+    document.getElementById("gender").innerHTML ="Please choose gender"
+      return false;
+  }
+  else{
+      return true;
+  }
+}
 function calculateDay(gender,month,year,date){
   var name="";
   year=document.getElementById("year").value;
@@ -23,3 +48,4 @@ function calculateDay(gender,month,year,date){
   }
  return name;
 }
+
