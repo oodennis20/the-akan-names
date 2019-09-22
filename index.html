@@ -16,8 +16,7 @@
         </p>
         <div class= card>
             <div>
-                <h3></h3>
-                <form name="calc" onsubmit="event.preventdefault(); calculator()"> 
+                <form> 
                     <div class="center">
                         <h3> Gender</h3>
                     </div>
@@ -25,15 +24,13 @@
                         <input type="radio" name="gender" value="male"> <strong>Male</strong><br>
                         <input type="radio" name="gender" value="female"> <strong>Female</strong><br>
                     <div class="center">
-                        <input type="number" name="date" id="date"><strong>DATE</strong><br> 
-                        <input type="number" name="month" id="month"><strong>MONTH</strong><br> 
-                        <input type="number" name="year" id="year"><strong>YEAR</strong><br>
-                        <button id="submit">submit</button>
-                        </form> 
+                        <input type="text" name="date" id="date"><strong>DATE</strong><br> 
+                        <input type="text" name="month" id="month"><strong>MONTH</strong><br> 
+                        <input type="text" name="year" id="year"><strong>YEAR</strong><br>
+                        <input type="button" value="submit" onclick="compute(this.form)"> <input type="reset" value="clear">
                     </div>
                 </form>
             </div>
-             <div id="eresult" style="color:red;"></div>
         </div>
     </body>
 </html>
