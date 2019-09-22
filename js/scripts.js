@@ -11,9 +11,9 @@ var CC, YY, MM, d, name;
       findGender(); 
   }
 function validate(){
-  var day= document.forms["calc"]["date"].value;
-  var month= document.forms["calc"]["month"].value;
-  var year= document.forms["calc"]["year"].value;
+  var day= document.getElementById("date").value;
+  var month= document.getElementById("month").value;
+  var year= document.getElementById("year").value;
   var gender= document.querySelector('input[name="gender"]:checked').value;
   if(year==""){
     document.getElementById("month").innerHTML ="Enter valid year"
