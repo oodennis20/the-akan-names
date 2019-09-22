@@ -11,8 +11,7 @@ body{
 .one{
     margin-bottom: 60px;
 }
-.centre{
-    text-align: center;
+.cent{
     color: darkorange;
 }
 .two{
@@ -27,8 +26,11 @@ h2{
     text-align: center;
 }
 h4{
-    color: rgb(216, 160, 17)
+    color: rgb(216, 160, 17);
 }
 #best{
-    color: rgb(216, 160, 17)
+    color: rgb(216, 160, 17);
+}
+.center{
+    color:rgb(216, 160, 17);
 }
