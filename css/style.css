@@ -13,6 +13,7 @@ body{
 }
 .centre{
     text-align: center;
+    color: darkorange;
 }
 .two{
     font-size: 30px;
@@ -24,4 +25,7 @@ h3{
 h2{
     font-size: 50px;
     text-align: center;
+}
+h4{
+    color: rgb(216, 160, 17)
 }
